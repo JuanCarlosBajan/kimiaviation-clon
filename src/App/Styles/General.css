@@ -1,6 +1,8 @@
 body {
   margin: 0px;
   background: #121718;
+  height: 100vh;
+  min-height: 600px;
 }
 
 html {
@@ -9,4 +11,55 @@ html {
 
 .content {
   min-height: 100vh;
+}
+
+.Video_Container {
+  overflow: hidden;
+  min-height: 600px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0px 0px 0px 0px #121718,
+    inset 0px -1100px 100px -1000px #121718;
+}
+
+.Window_Container {
+  min-height: 600px;
+  height: 100vh;
+  display: flex;
+}
+
+#videoSky {
+  z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  #videoSky {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  #videoSky {
+    width: auto;
+    height: 100%;
+  }
+}
+
+@media (max-width: 1075px) {
+  .Video_Container {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .Video_Container {
+    align-items: flex-start;
+  }
+
+  #videoSky {
+    width: 100%;
+    height: auto;
+  }
 }
