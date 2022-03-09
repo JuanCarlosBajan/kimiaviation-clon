@@ -1,0 +1,12 @@
+body {
+  margin: 0px;
+  background: #121718;
+}
+
+html {
+  min-height: 100vh;
+}
+
+.content {
+  min-height: 100vh;
+}
