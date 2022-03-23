@@ -54,6 +54,7 @@ html {
   display: flex;
   font-family: "Poppins", sans-serif;
   justify-content: center;
+  z-index: 10;
 }
 
 svg {

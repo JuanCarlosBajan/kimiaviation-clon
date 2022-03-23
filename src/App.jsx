@@ -53,13 +53,13 @@ const App = () => {
             <div className="Content">
                 <div className="Video_Container" id="video">
                     <video autoPlay muted loop id="videoSky">
-                        <source src="https://vod-progressive.akamaized.net/exp=1646864294~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2626%2F22%2F563130035%2F2662760252.mp4~hmac=552ab117696c61f60e2dfb105ae324babd7e4904b0e73def03104de4b6a71b09/vimeo-prod-skyfire-std-us/01/2626/22/563130035/2662760252.mp4?filename=Kimi+seamless+video.mp4.mp4" type="video/mp4"></source>    
+                        <source src={require('./App/Assets/video1.mp4')} type="video/mp4"></source>    
                     </video>
                 </div>
 
                 <div className="Window_Container">
                     <video autoPlay muted loop id="videoScene">
-                        <source src="https://vod-progressive.akamaized.net/exp=1646864085~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3105%2F22%2F565526339%2F2673875665.mp4~hmac=ef67044cf79798c419f35acb023822f4d29545d7982a97ed2e1457afbb80bde1/vimeo-prod-skyfire-std-us/01/3105/22/565526339/2673875665.mp4?filename=3+films+aan+elkaar.mp4.mp4" type="video/mp4"></source>    
+                        <source src={require('./App/Assets/video2.mp4')} type="video/mp4"></source>    
                     </video>
                     <div className="Window">
                     </div>
